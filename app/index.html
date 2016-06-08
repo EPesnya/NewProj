@@ -70,25 +70,34 @@
             </nav>
 
 
-            <div  id="hei" class="container-fluid">
+            <div class="container-fluid">
                 <div class="row">
-                    <header>
+                    <header id="hei">
                         <div class="header-content">
                             <div class="header-content-inner">
-                                <h1 style="font-size: 35px;">Your Favorite Source of Free Bootstrap Themes</h1>
-                                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                                <h1 style="font-size: 35px;">ЕЭРЛ 2076-го года</h1>
+                                <p>Все подляны на одной странице</p>
                                 <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
                             </div>
                         </div>
                     </header>
                 </div>
+                <div class="row">
+                    <div id="hei1" style="padding: 100px">
+                        <h1 style="color: #fff; opacity: .9; text-align: center; margin: 0;">asdasdasdasd asdasdasd asd</h1>
+                        <p style="color: #fff; opacity: .9; padding: 10px; text-align: center;">asdasdasdasd asdasdasd asd</p>
+                    </div>
+                </div>
             </div>
 
 			<script type="text/javascript">
 				function setHeiHeight() {
-				    $('#hei').css({
-				        height: $(window).height() + 'px'
-				    });
+                    $('#hei').css({
+                        height: $(window).height() + 'px'
+                    });
+                    $('#hei1').css({
+                        height: $(window).height() + 'px'
+                    });
 				}
 				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
 				$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
