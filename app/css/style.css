@@ -36,7 +36,7 @@ header {
 header .header-content {
     position: relative;
     text-align: center;
-    padding: 100px 15px 100px;
+    padding: 23% 15px 100px;
     width: 100%;
 }
 
@@ -50,7 +50,8 @@ header .header-content .header-content-inner h1 {
 
 #hei1 {
     margin: 0;
-    background-color: #116E61;
+    background-color: #3498DB;
+/* #27ae60;*/
     box-shadow: 0 0 100px rgba(0,0,0,1);
     z-index: 3;
 }
@@ -60,7 +61,14 @@ header .header-content .header-content-inner h1 {
     z-index: 2;
 }
 
-
+#mask {
+    background-color:rgba(0,0,0,.3);
+    height:100%;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+}
 
 
 
