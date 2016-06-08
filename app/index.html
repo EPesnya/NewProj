@@ -76,12 +76,10 @@
             <div class="container-fluid">
                 <div class="row">
                     <header id="hei">
-                    	<div id="mask"></div>
                         <div class="header-content">
                             <div class="header-content-inner">
                                 <h1 style="font-size: 35px;">ЭЭРЛ 2076-го года</h1>
                                 <p>Все подляны на одной странице</p>
-                                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
                             </div>
                         </div>
                     </header>
@@ -99,10 +97,10 @@
 			<script type="text/javascript">
 				function setHeiHeight() {
                     $('#hei').css({
-                        height: $(window).height() + 'px'
+                        minHeight: $(window).height() + 'px'
                     });
                     $('#hei1').css({
-                        height: $(window).height() + 'px'
+                        minHeight: $(window).height() + 'px'
                     });
 				}
 				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
