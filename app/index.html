@@ -17,6 +17,7 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css" data-noprefix="">
+	<script src="bower/jquery/dist/jquery.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -67,7 +68,7 @@
             	<!-- /.container-fluid -->
             </nav>
 
-			<header>
+			<header id="hei">
 				<div class="header-content">
 					<div class="header-content-inner">
 						<h1 style="font-size: 35px;">Your Favorite Source of Free Bootstrap Themes</h1>
@@ -77,7 +78,17 @@
 				</div>
 			</header>
 
-            <script src="bower/jquery/dist/jquery.js"></script>
+			
+			<script type="text/javascript">
+				function setHeiHeight() {
+				    $('#hei').css({
+				        height: $(window).height() + 'px'
+				    });
+				}
+				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
+				$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
+			</script>
+
             <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
         </body>
         </html>
