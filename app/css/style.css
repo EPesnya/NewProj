@@ -3,6 +3,11 @@ html, body {
     width: 100%;
 }
 
+h1
+{
+    text-shadow: 0 0 .4em rgba(0,0,0,.4);
+}
+
 .navbar-default {
 	background-color: #ecf0f1;
 	border-color: rgba(34, 34, 34, 0.05);
@@ -54,6 +59,7 @@ header .header-content .header-content-inner h1 {
 /* #27ae60;*/
     box-shadow: 0 0 100px rgba(0,0,0,1);
     z-index: 3;
+    padding: 10%;
 }
 
 #hei {
