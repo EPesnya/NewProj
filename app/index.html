@@ -18,6 +18,12 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css" data-noprefix="">
 
+    <script src="bower/jquery/dist/jquery.js"></script>
+    <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        document.querySelector('header').style.height = (window.screen.height).toString();
+    </script>
+
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -67,17 +73,19 @@
             	<!-- /.container-fluid -->
             </nav>
 
-			<header>
-				<div class="header-content">
-					<div class="header-content-inner">
-						<h1 style="font-size: 35px;">Your Favorite Source of Free Bootstrap Themes</h1>
-						<p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
-						<a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
-					</div>
-				</div>
-			</header>
+            <div class="container-fluid">
+                <div class="row">
+                    <header>
+                        <div class="header-content">
+                            <div class="header-content-inner">
+                                <h1 style="font-size: 35px;">Your Favorite Source of Free Bootstrap Themes</h1>
+                                <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
+                                <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+            </div>
 
-            <script src="bower/jquery/dist/jquery.js"></script>
-            <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
         </body>
         </html>
