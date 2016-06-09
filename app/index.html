@@ -16,9 +16,9 @@
 	<!--link href="css/freelancer.css" rel="stylesheet"-->
 
 	<link rel="stylesheet" href="css/style.css">
-	<link href="http://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet" type="text/css" data-noprefix="">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<script src="bower/jquery/dist/jquery.js"></script>
-    <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,10 +32,13 @@
 	<!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
             <![endif]-->
-            
+            <div class="loading" style="display: none;">
+            <img src="img/compass.svg" alt="">
+            </div>
             <!-- Navigation -->
             <nav class="navbar navbar-default navbar-fixed-top">
             	<div class="container">
+            		<img id="logo" src="img/compass.svg" alt="EERL">
             		<!-- Brand and toggle get grouped for better mobile display -->
             		<div class="navbar-header page-scroll">
             			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -44,9 +47,8 @@
             				<span class="icon-bar"></span>
             				<span class="icon-bar"></span>
             			</button>
-            			<img style="max-height: 2.5em; float: left; margin: 6px 6px 6px 10px" src="img/Compas.png" alt="EERL">
             			<a class="navbar-brand" href="#page-top">
-            			ЭЭРЛ-2076
+            				ЭЭРЛ-2076
             			</a>
             		</div>
 
@@ -74,38 +76,38 @@
 
 
             <div class="container-fluid">
-                <div class="row">
-                    <header id="hei">
-                        <div class="header-content">
-                            <div class="header-content-inner">
-                                <h1 style="font-size: 35px;">ЭЭРЛ 2076-го года</h1>
-                                <p>Все подляны на одной странице</p>
-                            </div>
-                        </div>
-                    </header>
-                </div>
-                <div class="row">
-                    <div id="hei1">
-                        <h1 style="color: #fff; opacity: .9; text-align: center; margin: 0;">asdasdasdasd asdasdasd asd</h1>
-                        <p style="color: #fff; opacity: .9; padding: 10px; text-align: center; font-size: 1.5em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis nobis deserunt tempora repellendus, recusandae totam minima modi nemo odit pariatur saepe, sequi quibusdam molestiae magnam tempore.
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsam optio aut eligendi enim harum dolorum nisi quasi sed qui vero, quas accusamus omnis quo quia reprehenderit officia magnam nihil ea rerum illo, quidem, totam nemo autem exercitationem. Sunt autem quibusdam numquam, perspiciatis reprehenderit omnis incidunt porro quas ex, facere sed minima, perferendis voluptates, error fuga consequuntur recusandae eius. Accusantium earum eos dolor, officiis odit officia voluptates quo numquam vitae perspiciatis, suscipit repellendus qui adipisci, modi ex ipsam rerum recusandae repudiandae quod eveniet necessitatibus, quas a beatae tenetur! Doloremque, iure, consequatur! Incidunt doloribus sunt culpa porro, tenetur. Aspernatur, nemo, repellendus.
-                        </p>
-                    </div>
-                </div>
+            	<div class="row">
+            		<header id="hei">
+            			<div class="header-content">
+            				<div class="header-content-inner">
+            					<h1 style="font-size: 35px;">ЭЭРЛ 2076-го года</h1>
+            					<p>Все подляны на одной странице</p>
+            				</div>
+            			</div>
+            		</header>
+            	</div>
+            	<div class="row">
+            		<div id="hei1">
+            			<h1 style="color: #fff; opacity: .9; text-align: center; margin: 0;">asdasdasdasd asdasdasd asd</h1>
+            			<p style="color: #fff; opacity: .9; padding: 10px; text-align: center; font-size: 1.5em;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem facilis nobis deserunt tempora repellendus, recusandae totam minima modi nemo odit pariatur saepe, sequi quibusdam molestiae magnam tempore.
+            				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum ipsam optio aut eligendi enim harum dolorum nisi quasi sed qui vero, quas accusamus omnis quo quia reprehenderit officia magnam nihil ea rerum illo, quidem, totam nemo autem exercitationem. Sunt autem quibusdam numquam, perspiciatis reprehenderit omnis incidunt porro quas ex, facere sed minima, perferendis voluptates, error fuga consequuntur recusandae eius. Accusantium earum eos dolor, officiis odit officia voluptates quo numquam vitae perspiciatis, suscipit repellendus qui adipisci, modi ex ipsam rerum recusandae repudiandae quod eveniet necessitatibus, quas a beatae tenetur! Doloremque, iure, consequatur! Incidunt doloribus sunt culpa porro, tenetur. Aspernatur, nemo, repellendus.
+            			</p>
+            		</div>
+            	</div>
             </div>
 
-			<script type="text/javascript">
-				function setHeiHeight() {
-                    $('#hei').css({
-                        minHeight: $(window).height() + 'px'
-                    });
-                    $('#hei1').css({
-                        minHeight: $(window).height() + 'px'
-                    });
-				}
+            <script type="text/javascript">
+            	function setHeiHeight() {
+            		$('#hei').css({
+            			minHeight: $(window).height() + 'px'
+            		});
+            		$('#hei1').css({
+            			minHeight: $(window).height() + 'px'
+            		});
+            	}
 				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
 				$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
 			</script>
 
-        </body>
-        </html>
+		</body>
+		</html>

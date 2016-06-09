@@ -1,0 +1,27 @@
+<svg id="compass" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 226 270">
+	<defs>
+		<style>
+			.cls-1,.cls-4{opacity:0.2;}.cls-2{fill:#f39c1e;}.cls-3{fill:#e57f25;}.cls-4{fill:#050505;}.cls-5{fill:#f4f5e4;}.cls-6{fill:#e74d3c;}.cls-7{fill:#343433;}.cls-8{opacity:0.15;}
+		</style>
+	</defs>
+	<title>compass</title>
+	<path id="Shadow1" class="cls-1" d="M114,3a28,28,0,1,0,28,28A28,28,0,0,0,114,3Zm0,44a16,16,0,1,1,16-16A16,16,0,0,1,114,47Z"/>
+	<path id="Ring" class="cls-2" d="M110,0a28,28,0,1,0,28,28A28,28,0,0,0,110,0Zm0,44a16,16,0,1,1,16-16A16,16,0,0,1,110,44Z"/><path id="RingSh" class="cls-3" d="M126,28a16,16,0,0,1-16,16V56a28,28,0,0,0,0-56V12A16,16,0,0,1,126,28Z"/>
+	<circle id="Shadow2" class="cls-4" cx="117" cy="161" r="110"/>
+	<circle id="Main" class="cls-2" cx="110" cy="154.5" r="110"/>
+	<path id="MainSh" class="cls-3" d="M32.22,232.28A110,110,0,1,0,187.78,76.72Z"/>
+	<circle id="Center" class="cls-5" cx="110" cy="154.5" r="88"/>
+	<g id="Hand">
+		<polygon id="Red" class="cls-6" points="155 109.5 92.32 136.82 127.68 172.18 155 109.5"/>
+		<polygon id="Black" class="cls-7" points="127.68 172.18 92.32 136.82 65 199.5 127.68 172.18"/>
+		<animateTransform attributeName="transform"
+			attributeType="XML"
+			type="rotate"
+			from="0 112 154"
+			to="360 112 154"
+			dur="3s"
+			begin="0s"
+			repeatCount="indefinite"  />
+	</g>
+	<path id="CenterSh" class="cls-8" d="M47.77,216.73A88,88,0,0,0,172.23,92.27Z"/>
+</svg>

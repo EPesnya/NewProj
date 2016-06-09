@@ -1,6 +1,7 @@
 html, body {
     height: 100vh;
     width: 100%;
+    font-family: 'Roboto' !important;
 }
 
 h1
@@ -8,10 +9,18 @@ h1
     text-shadow: 0 0 .4em rgba(0,0,0,.4);
 }
 
+div.loading {
+    min-width: 100%;
+    min-height: 100%;
+    background: #2db069;
+    position: fixed;
+    z-index: 999999;
+}
+
 .navbar-default {
 	background-color: #ecf0f1;
 	border-color: rgba(34, 34, 34, 0.05);
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 	-webkit-transition: all 0.35s;
 	-moz-transition: all 0.35s;
 	transition: all 0.35s;
@@ -19,9 +28,13 @@ h1
 
 .navbar-default .navbar-header .navbar-brand {
 	color: #e67e22;
-	font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+	font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 	font-weight: 700;
 	text-transform: uppercase;
+}
+
+#logo {
+	max-height: 2.5em; max-width: 2.5em; float: left; margin: 6px 6px 6px 10px;
 }
 
 header {
