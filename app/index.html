@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 
-	<title>Document</title>
+	<title>EERL-2076</title>
 
 	<!-- Bootstrap -->
 	<link href="bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -78,7 +78,7 @@
             <div class="container-fluid">
             	<div class="row">
             		<header id="hei">
-            			<div class="header-content">
+            			<div id="hei-inner" class="header-content">
             				<div class="header-content-inner">
             					<h1 style="font-size: 35px;">ЭЭРЛ 2076-го года</h1>
             					<p>Все подляны на одной странице</p>
@@ -104,9 +104,12 @@
             		$('#hei1').css({
             			minHeight: $(window).height() + 'px'
             		});
+            		$('#hei-inner').css({
+            			padding: $(window).height()/2.4 + 'px 15px 100px'
+            		});
             	}
 				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
-				$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
+				//$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
 			</script>
 
 		</body>
