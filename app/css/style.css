@@ -4,9 +4,29 @@ html, body {
     font-family: 'Roboto' !important;
 }
 
-h1
+#add-text-shadow
 {
-    text-shadow: 0 0 .4em rgba(0,0,0,.4);
+    text-shadow: 0 0 .4em rgba(0,0,0,.4);    
+}
+
+p
+{  
+}
+
+@-webkit-keyframes appearence {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes appearence {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.header-content-inner {
+    -webkit-animation-name: appearence;
+    animation-name: appearence;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
 }
 
 div.loading {
@@ -46,9 +66,14 @@ header {
     background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url('../img/mainDuke (2).jpg');
     text-align: center;
     color: white;
+}
+
+.btn-group
+{
+    box-shadow: 0 0 1em rgba(0,0,0,1);
 }
 
 header .header-content {
