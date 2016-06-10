@@ -10,7 +10,8 @@
 	<title>EERL-2076</title>
 
 	<!-- Bootstrap -->
-	<link href="bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bower/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" type="text/css" rel="stylesheet">
 
 	<!-- Custom CSS -->
 	<!--link href="css/freelancer.css" rel="stylesheet"-->
@@ -20,6 +21,8 @@
 	<script src="bower/jquery/dist/jquery.js"></script>
 	<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/fe37da63b3.js"></script>
+    <script src="js/jquery.viewportchecker.js"></script>
+
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -80,14 +83,16 @@
             	<div class="row">
             		<header id="hei">
             			<div id="hei-inner" class="header-content">
-            				<div class="header-content-inner">
-            					<h1 id="#add-text-shadow" style="font-size: 4em;">Ришельевский лицей</h1>
-            					<p id="#add-text-shadow" style="font-size: 1.6em;text-shadow: 0 0 .4em rgba(0,0,0,1);">при Одесском национальном университете<br>1817... 1989...</p>
-                                <div class="btn-group">
-                                  <button type="button" class="btn btn-default"><i style="color: #33567F;" class="fa fa-vk fa-2x" aria-hidden="true"></i></button>
-                                  <button type="button" class="btn btn-default"><i class="fa fa-wikipedia-w fa-2x" aria-hidden="true"></i></button>
-                                  <button type="button" class="btn btn-default"><i style="color: red;" class="fa fa-youtube fa-2x" aria-hidden="true"></i></button>
-                                  <button type="button" class="btn btn-default"><i style="color: #3B5998;" class="fa fa-facebook fa-2x" aria-hidden="true"></i></button>
+            				<div class="header-content-inner .animation.stop">
+                                <div class="animated">
+                                    <h1 id="add-text-shadow" style="font-size: 4em;">Ришельевский лицей</h1>
+                                    <p id="add-text-shadow" style="font-size: 1.6em;">при Одесском национальном университете<br>1817... 1989...</p>
+                                    <div style="display: flex; align-items: center; justify-content: center; overflow: auto; height:50px">
+                                        <a href="#"><img id="logo" width="35em" src="img/vk.svg" alt="EERL"></a>
+                                        <a href="#"><img id="logo" width="35em" src="img/facebook.svg" alt="EERL"></a>
+                                        <a href="#"><img id="logo" width="35em" src="img/youtube.svg" alt="EERL"></a>
+                                        <a href="#"><img id="logo" width="35em" src="img/wikipedia.svg" alt="EERL"></a>
+                                    </div>
                                 </div>
             				</div>
             			</div>
@@ -95,12 +100,31 @@
             	</div>
             	<div class="row">
             		<div id="hei1">
-            			<h1 style="color: #fff; opacity: .9; text-align: center; margin: 0;">Как чувствовать себя отлично?</h1>
-            			<p style="color: #fff; opacity: .9; padding: 10px; text-align: center; font-size: 1.5em;">
-                            Удивительный факт открыли британские ученые. Группа исследователей из Бернингемского университета собрала большое количество статистики и теперь может с уверенностью утверждать, что вегеторианцы в походах чувствуют себя отлично. Ближе всех к вегеторианцам расположились вейперы с их 95-ью процентами комфорта. Остальные испытуемые чувствовали себя ужасно. Некоторые травили себя опасным дымом, а некоторые еще и мясом это заедали.<br><br><span style="font-style: italic;">"Объяснения этому феномену еще попросту не существует, однако мы настоятельно рекомендуем не употреблять белковую пищу и переходить на дым. К тому же законом это не запрещено. Иными словами парите где хотите"</span>, - заметил главный исследователь Джон Синовски.
-                        </p>
+                        <div class="post1">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-5">
+                                        <img src="../img/lyc1.jpg" id="add-box-shadow" style="width:100%">
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <h1 style="color: #fff; opacity: .9; text-align: center; margin: 0;">Как чувствовать себя отлично?</h1>
+                                        <p style="color: #fff; opacity: .9; padding: 10px; text-align: center; font-size: 1.5em;">
+                                            Удивительный факт открыли британские ученые. Группа исследователей из Бернингемского университета собрала большое количество статистики и теперь может с уверенностью утверждать, что вегеторианцы в походах чувствуют себя отлично. Ближе всех к вегеторианцам расположились вейперы с их 95-ью процентами комфорта. Остальные испытуемые чувствовали себя ужасно. Некоторые травили себя опасным дымом, а некоторые еще и мясом это заедали.<br><br><span style="font-style: italic;">"Объяснения этому феномену еще попросту не существует, однако мы настоятельно рекомендуем не употреблять белковую пищу и переходить на дым. К тому же законом это не запрещено. Иными словами парите где хотите"</span>, - заметил главный исследователь Джон Синовски.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
             		</div>
             	</div>
+                <div class="row">
+                    <div id="g-row-3">
+                        <div class="post2">
+                            <h1 id="add-text-shadow" style="font-size: 4em;">Ришельевский лицей</h1>
+                            <p id="add-text-shadow" style="font-size: 1.6em;">при Одесском национальном университете<br>1817... 1989...</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <script type="text/javascript">
@@ -108,16 +132,38 @@
             		$('#hei').css({
             			minHeight: $(window).height() + 'px'
             		});
-            		$('#hei1').css({
-            			minHeight: $(window).height() + 'px'
-            		});
-            		$('#hei-inner').css({
-            			padding: $(window).height()/2.4 + 'px 15px 100px'
-            		});
+                    $('#hei1').css({
+                        minHeight: $(window).height() + 'px'
+                    });
+                    $('#g-row-3').css({
+                        minHeight: $(window).height() + 'px'
+                    });
+                    $('#hei-inner').css({
+                        padding: $(window).height()/2.4 + 'px 15px 100px'
+                    });
             	}
 				setHeiHeight(); // устанавливаем высоту окна при первой загрузке страницы
 				//$(window).resize( setHeiHeight ); // обновляем при изменении размеров окна
 			</script>
+            <script>
+                var isPlayed1 = false;
+                var isPlayed2 = false;
+                window.onscroll = function() {
+                    var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+                    if(scrolled > $(window).height() * 0.2 && !isPlayed1)
+                    {
+                        $( ".post1" ).css("top", "2em");
+                        $( ".post1" ).animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
+                        isPlayed1 = true;
+                    }
+                    if(scrolled > $(window).height() * 1.3 && !isPlayed2)
+                    {
+                        $( ".post2" ).css("top", "2em");
+                        $( ".post2" ).animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
+                        isPlayed2 = true;
+                    }
+                }          
+            </script>
 
 		</body>
 		</html>
