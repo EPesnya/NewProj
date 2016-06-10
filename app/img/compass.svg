@@ -17,11 +17,12 @@
 		<animateTransform attributeName="transform"
 			attributeType="XML"
 			type="rotate"
-			from="0 112 154"
-			to="360 112 154"
 			dur="3s"
 			begin="0s"
-			repeatCount="indefinite"  />
+			repeatCount="indefinite" 
+			values="0 112 154; 254 112 154; 360 112 154; 509 112 154; 623 112 154; 673 112 154; 720 112 154"
+			keyTimes="0; 0.125; 0.25; 0.5; 0.75; 0.875; 1"
+    		/>
 	</g>
 	<path id="CenterSh" class="cls-8" d="M47.77,216.73A88,88,0,0,0,172.23,92.27Z"/>
 </svg>
