@@ -9,9 +9,6 @@ html, body {
     text-shadow: 0 0 .7em rgba(0,0,0,.7);    
 }
 
-p
-{  
-}
 .animation.stop{
     animation-play-state: paused;
     -webkit-animation-play-state: paused;
