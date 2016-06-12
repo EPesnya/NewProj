@@ -192,12 +192,9 @@
                                                     <a>ЭЭРЛ-2009. Карпаты. Междуречье Мизунки и Свичи.</a><br>
                                                     <a>ЭЭРЛ-2010. Толтры. Долины Смотрича и Мукши.</a><br>
                                                     <a>ЭЭРЛ-2011. Долина реки Сейм.</a><br>
-                                                    <a>ВЭРЛ-2012. Велоэкспедиция по Кировоградской обл.</a><br>
                                                     <a>ЭЭРЛ-2012. Юниорская. Долина реки Случь.</a><br>
-                                                    <a>ВЭРЛ-2013. Велоэкспедиция вдоль Ю.Буга.</a><br>
                                                     <a>ЭЭРЛ-2013. Юниорская. Долина реки Серет.</a><br>
                                                     <a>ЭЭРЛ-2014. Юниорская. Снова Южный Буг.</a><br>
-                                                    <a>ВЭРЛ-2014. Велоэкспедиция вдоль Днестра и Мурафы.</a><br>
                                                     <a>ЭЭРЛ-2015. Юниорская. Долина рек Стырь и Горынь.</a><br>
                                                     <hr>
                                                     <a href="http://rl.odessa.ua/index.php/ru/podgotovka-eerl-2016">Будущая экспедиция</a>
@@ -263,13 +260,13 @@
                                                 <h4 class="modal-title">Направления</h4>
                                             </div>
                                             <div class="modal-body">
-                                                <a>Бадминтон</a><br>
-                                                <a>Баскетбол</a><br>
-                                                <a>Волейбол</a><br>
-                                                <a>Лёгкая атлетика</a><br>
-                                                <a>Настольный теннис</a><br>
-                                                <a>Шахматы</a><br>
-                                            <a>Шашки</a><br>
+                                                <a href="html/activities/sport/badminton.html">Бадминтон</a><br>
+                                                <a href="html/activities/sport/basketball.html">Баскетбол</a><br>
+                                                <a href="html/activities/sport/volleyball.html">Волейбол</a><br>
+                                                <a href="html/activities/sport/athletics.html">Лёгкая атлетика</a><br>
+                                                <a href="html/activities/sport/table_tennis.html">Настольный теннис</a><br>
+                                                <a href="html/activities/sport/chess.html">Шахматы</a><br>
+                                                <a href="html/activities/sport/checkers.html">Шашки</a><br>
                                             </div>
                                         </div>
                                     </div>
@@ -371,7 +368,7 @@
             window.onscroll = function(){
                 var scrolled = window.pageYOffset || document.documentElement.scrollTop;
                 for (var i = posts.length - 1; i >= 0; i--) {
-                    if((scrolled > postsOffsets[i].top - ($(window).height() * 0.95)) && !isPlayed[i])
+                    if((scrolled > postsOffsets[i].top - $(window).height()) && !isPlayed[i])
                     {
                         posts[i].css("top", "2em");
                         posts[i].animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
@@ -407,6 +404,5 @@
             });
         });
     </script>
-
 </body>
 </html>
