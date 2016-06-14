@@ -63,3 +63,35 @@
     30% {opacity:0;}
     100% {opacity:0;}
 }
+
+#math
+{
+    margin: 0;
+    padding: 20px;
+}
+#phys
+{
+    margin: 0;
+    padding: 20px;
+}
+#chem
+{
+    margin: 0;
+    padding: 20px;
+}
+
+#mathHidedDiv
+{
+    background-color: #8948E9;
+    padding: 5%;
+}
+#chemHidedDiv
+{
+    background-color: #8948E9;
+    padding: 5%;
+}
+#physHidedDiv
+{
+    background-color: #8948E9;
+    padding: 5%;
+}
