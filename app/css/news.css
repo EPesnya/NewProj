@@ -1,3 +1,7 @@
+.page-scroll a {
+	color: #fff;
+}
+
 .masonry {
     margin: 1.5em 0;
     padding: 0;
@@ -23,7 +27,7 @@
     box-shadow: 2px 2px 4px 0 #ccc; /* Внешняя тень плиток */
 }
 
-img, iframe {
+img, iframe, video {
 width: 100%;
 height: auto;
 display: block;
