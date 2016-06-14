@@ -17,11 +17,13 @@
     <!--link href="css/freelancer.css" rel="stylesheet"-->
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main_style.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <script src="bower/jquery/dist/jquery.js"></script>
     <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/fe37da63b3.js"></script>
     <script src="js/appearance.js"></script>
+    <script src="js/sphere_pick.js"></script>
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -87,10 +89,18 @@
             </nav>
 
 
+
+
             <div class="container-fluid">
             	<div class="row">
             		<header id="hei">
             			<div id="hei-inner" class="header-content">
+                            <ul class="body_slides">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
             				<div class="header-content-inner animated">
                                 <h1 id="add-text-shadow" style="font-size: 6vw;">Ришельевский лицей</h1>
                                 <p id="add-text-shadow" style="font-size: 2.4vw;">при Одесском национальном университете<br>1817... 1989...</p>
@@ -113,27 +123,27 @@
                     <div class="container-fluid">
                         <div class="post"><h1>Направления обучения</h1></div>
                         <div class="post"><p>Традиционно в лицее существует разделение параллели на 3 класса: математический, физический и химико-биологический. Каждый класс получает намного больший объем знаний по соответствующему предмету, чем в других школах.</p></div>
-                        <div style="margin-top:5%">
-                            <div class="col-lg-4 col-md-4">
+                        <div style="margin-top:2%">
+                            <div id="mathDiv" class="col-lg-4 col-md-4">
                                 <a>
-                                    <span class="post centred-image"><img width="80%" src="img/axis.svg"></span>
+                                    <span class="post centred-image"><img width="60%" src="img/axis.svg"></span>
                                     <div class="post"><h2 style="text-align:center">Математика</h2></div>
                                 </a>
-                                <p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>
+                                <!--<p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>-->
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div id="physDiv" class="col-lg-4 col-md-4">
                                 <a>
-                                    <span class="post centred-image"><img width="80%" src="img/atom.svg"></span>
+                                    <span class="post centred-image"><img width="60%" src="img/atom.svg"></span>
                                     <div class="post"><h2 style="text-align:center">Физика</h2></div>
                                 </a>
-                                <p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>
+                                <!--<p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>-->
                             </div>
-                            <div class="col-lg-4 col-md-4">
+                            <div id="chemDiv" class="col-lg-4 col-md-4">
                                 <a>
-                                    <span class="post centred-image"><img width="80%" src="img/bacteria.svg"></span>
+                                    <span class="post centred-image"><img width="60%" src="img/bacteria.svg"></span>
                                     <div class="post"><h2 style="text-align:center">Химия-Биология</h2></div>
                                 </a>
-                                <p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>
+                                <!--<p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>-->
                             </div>
                         </div>   
                     </div>
