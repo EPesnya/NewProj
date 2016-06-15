@@ -1,372 +1,383 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<meta name="description" content="">
-	<meta name="author" content="">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
 
-	<title>Ришельевский лицей</title>
+		<title>Ришельевский лицей</title>
+		<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
+		<!-- Bootstrap -->
+		<link href="bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+		<link href="css/animate.css" type="text/css" rel="stylesheet">
 
-	<!-- Bootstrap -->
-    <link href="bower/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link href="css/animate.css" type="text/css" rel="stylesheet">
+		<!-- Custom CSS -->
 
-    <!-- Custom CSS -->
-    <!--link href="css/freelancer.css" rel="stylesheet"-->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/main_style.css">
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<script src="bower/jquery/dist/jquery.js"></script>
+		<script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/fe37da63b3.js"></script>
+		<script src="js/appearance.js"></script>
+		<script src="js/sphere_pick.js"></script>
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/main_style.css">
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
-    <script src="bower/jquery/dist/jquery.js"></script>
-    <script src="bower/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="https://use.fontawesome.com/fe37da63b3.js"></script>
-    <script src="js/appearance.js"></script>
-    <script src="js/sphere_pick.js"></script>
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	  <![endif]-->
+	</head>
 
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
-  </head>
-
-  <body id="main-page">
+	<body id="main-page">
 	<!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-            <![endif]-->
+			<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<![endif]-->
 
-            <div class="loading" style="display: none;">
-                <img src="img/compass.svg" alt="">
-            </div>
+			<div id="loading">
+			</div>
 
-            <!-- Navigation -->
-            <nav class="navbar navbar-default navbar-fixed-top">
-            	<div class="container">
-            		<!--<img id="logo" src="img/compass.svg" alt="EERL">-->
-            		<!-- Brand and toggle get grouped for better mobile display -->
-            		<div class="navbar-header page-scroll">
-            			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-            				<span class="sr-only">Toggle navigation</span>
-            				<span class="icon-bar"></span>
-            				<span class="icon-bar"></span>
-            				<span class="icon-bar"></span>
-            			</button>
-            			<a class="navbar-brand" id="main-logo">
-            				Ришельевский лицей
-            			</a>
-            		</div>
+			<!-- Navigation -->
+			<nav class="navbar navbar-default navbar-fixed-top">
+				<div class="container">
+					<!--<img id="logo" src="img/compass.svg" alt="EERL">-->
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header page-scroll">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" id="main-logo">
+							Ришельевский лицей
+						</a>
+					</div>
 
-            		<!-- Collect the nav links, forms, and other content for toggling -->
-            		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            			<ul class="nav navbar-nav navbar-right">
-            				<li class="hidden">
-            					<a href="#page-top"></a>
-            				</li>
-            				<li class="page-scroll">
-            					<a id="spheres">Новости</a>
-            				</li>
-            				<li class="page-scroll">
-            					<a id="summer">Лицеисту</a>
-            				</li>
-            				<li class="page-scroll">
-            					<a id="evening">Абитуриенту</a>
-            				</li>
-                            <li class="page-scroll">
-                                <a>Дистанционное образование</a>
-                            </li>
-                            <li class="page-scroll">
-                                <a>Фонд</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- /.navbar-collapse -->
-                </div>
-                <!-- /.container-fluid -->
-            </nav>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="hidden">
+								<a href="#page-top"></a>
+							</li>
+							<li class="page-scroll">
+								<a href="html\news.html">Новости</a>
+							</li>
+							<li class="page-scroll">
+								<a id="summer">Лицеисту</a>
+							</li>
+							<li class="page-scroll">
+								<a id="evening">Абитуриенту</a>
+							</li>
+							<li class="page-scroll">
+								<a>Дистанционное образование</a>
+							</li>
+							<li class="page-scroll">
+								<a>Фонд</a>
+							</li>
+						</ul>
+					</div>
+					<!-- /.navbar-collapse -->
+				</div>
+				<!-- /.container-fluid -->
+			</nav>
 
+			<div class="container-fluid">
+				<div class="row">
+					<header id="hei">
+						<div id="hei-inner" class="header-content">
+							<ul class="body_slides">
+								<li></li>
+								<li></li>
+								<li></li>
+								<li></li>
+							</ul>
+							<div class="header-content-inner animated">
+								<h1 id="add-text-shadow" style="font-size: 6vw;">Ришельевский лицей</h1>
+								<p id="add-text-shadow" style="font-size: 2.4vw;">при Одесском национальном университете<br>1817... 1989...</p>
+								<div style="text-align: center;">
+									<a href="https://new.vk.com/rl_odessa"><img class="social-buttons" src="img/vk.svg" alt="EERL"></a>
+									<a href="https://www.facebook.com/lyceum.odessa"><img class="social-buttons" src="img/facebook.svg" alt="EERL"></a>
+									<a href="https://www.youtube.com/channel/UC4hVtiv-OB4_8LFxqLMfUKg"><img class="social-buttons" width="100%" src="img/youtube.svg" alt="EERL"></a>
+									<a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D1%88%D0%B5%D0%BB%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B8%D1%86%D0%B5%D0%B9"><img class="social-buttons" src="img/wikipedia.svg" alt="EERL"></a>
+								</div>
+								<div id="downButton" style="text-align: center; padding-top:3em" >
+									<img width="60px" height="60px" src="img/down-arrow.svg" alt="EERL">
+								</div>
+							</div>
+						</div>
+					</header>
+				</div>
 
+				<div class="row">
+					<div id="hei1">
+						<div class="container-fluid" style="padding-left:2%; padding-right:2%;">
+							<div class="row">
+								<div class="post"><h1>Направления обучения</h1></div>
+								<div class="post"><p>Традиционно в лицее существует разделение параллели на 3 класса: математический, физический и химико-биологический. Каждый класс получает намного больший объем знаний по соответствующему предмету, чем в других школах.</p></div>
+								<div style="margin-top:2%">
+									<div id="mathDiv" class="col-lg-4 col-md-4">
+										<a>
+											<span class="post centred-image"><img width="70%" src="img/axis.svg"></span>
+											<div id="math" class="post"><h2 style="text-align:center">Математика</h2></div>
+										</a>
+										<!--<p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>-->
+									</div>
+									<div id="physDiv" class="col-lg-4 col-md-4">
+										<a>
+											<span class="post centred-image"><img width="70%" src="img/atom.svg"></span>
+											<div id="phys" class="post"><h2 style="text-align:center">Физика</h2></div>
+										</a>
+										<!--<p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>-->
+									</div>
+									<div id="chemDiv" class="col-lg-4 col-md-4">
+										<a>
+											<span class="post centred-image"><img width="70%" src="img/bacteria.svg"></span>
+											<div id="chem" class="post"><h2 style="text-align:center">Химия-Биология</h2></div>
+										</a>
+										<!--<p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>-->
+									</div>
+								</div> 
+							</div>  
+							<div id="mathHidedDiv" class="row">
+								<p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>
+							</div>
+							<div id="physHidedDiv" class="row">
+								<p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>
+							</div>
+							<div id="chemHidedDiv" class="row">
+								<p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
 
+				<div class="row">
+					<div id="g-row-3">
+						<div class="post">
+							<span class="post"><h1>Лицей летом</h1></span>
+							<p></p>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+								<div style="margin-top:5%">
+									<div class="col-lg-3 col-md-3">
+										<a data-toggle="modal" data-target="#SNMS">
+											<span class="post centred-image"><img width="80%" src="img/summer/home.svg"></span>
+											<div class="post"><h2 style="text-align:center">ЛЕМШ</h2></div>
+										</a>
+										<p>
+											<span class="post">Летняя Естественно-Математическая Школа <br><br>Если даже летом вы не можете жить без физики, математики, информатики, любите решать олимпиадные задачи и участвовать в физических турнирах, и при этом хотите загореть, вволю накупаться в море, укрепить свое здоровье, тогда летняя физико-математическая школа – именно то, что вам нужно!
+											</span>
+										</p>
+									</div>
 
-            <div class="container-fluid">
-            	<div class="row">
-            		<header id="hei">
-            			<div id="hei-inner" class="header-content">
-                            <ul class="body_slides">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-            				<div class="header-content-inner animated">
-                                <h1 id="add-text-shadow" style="font-size: 6vw;">Ришельевский лицей</h1>
-                                <p id="add-text-shadow" style="font-size: 2.4vw;">при Одесском национальном университете<br>1817... 1989...</p>
-                                <div style="text-align: center;">
-                                    <a href="https://new.vk.com/rl_odessa"><img class="social-buttons" src="img/vk.svg" alt="EERL"></a>
-                                    <a href="https://www.facebook.com/lyceum.odessa"><img class="social-buttons" src="img/facebook.svg" alt="EERL"></a>
-                                    <a href="https://www.youtube.com/channel/UC4hVtiv-OB4_8LFxqLMfUKg"><img class="social-buttons" width="100%" src="img/youtube.svg" alt="EERL"></a>
-                                    <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B8%D1%88%D0%B5%D0%BB%D1%8C%D0%B5%D0%B2%D1%81%D0%BA%D0%B8%D0%B9_%D0%BB%D0%B8%D1%86%D0%B5%D0%B9"><img class="social-buttons" src="img/wikipedia.svg" alt="EERL"></a>
-                                </div>
-                                <div id="downButton" style="text-align: center; padding-top:3em" >
-                                    <img width="60px" height="60px" src="img/down-arrow.svg" alt="EERL">
-                                </div>
-                            </div>
-                        </div>
-                    </header>
-                </div>
+									<div id="SNMS" class="modal fade">
+										<div class="modal-dialog">
+											<div class="modal-content" style="color: black;">
+												<div class="modal-header">
+													<button class="close" type="button" data-dismiss="modal">×</button>
+													<h4 class="modal-title">Летние школы</h4>
+												</div>
+												<div class="modal-body">
+													<a>1998. Каролино-Бугаз</a><br>
+													<a>1999. Каролино-Бугаз</a><br>
+													<a>2000. Южный</a><br>
+													<a>2001. Южный</a><br>
+													<a>2002. Сергеевка</a><br>
+													<a>2003. Чабанка</a><br>
+													<a>2004. Южный</a><br>
+													<a>2014. Совиньон</a><br>
+													<a>2015. Совиньон</a><br>
+												</div>
+											</div>
+										</div>
+									</div>
 
-                <div class="row">
-                  <div id="hei1">
-                    <div class="container-fluid" style="padding-left:2%; padding-right:2%;">
-                        <div class="row">
-                            <div class="post"><h1>Направления обучения</h1></div>
-                            <div class="post"><p>Традиционно в лицее существует разделение параллели на 3 класса: математический, физический и химико-биологический. Каждый класс получает намного больший объем знаний по соответствующему предмету, чем в других школах.</p></div>
-                            <div style="margin-top:2%">
-                                <div id="mathDiv" class="col-lg-4 col-md-4">
-                                    <a>
-                                        <span class="post centred-image"><img width="70%" src="img/axis.svg"></span>
-                                        <div id="math" class="post"><h2 style="text-align:center">Математика</h2></div>
-                                    </a>
-                                    <!--<p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>-->
-                                </div>
-                                <div id="physDiv" class="col-lg-4 col-md-4">
-                                    <a>
-                                        <span class="post centred-image"><img width="70%" src="img/atom.svg"></span>
-                                        <div id="phys" class="post"><h2 style="text-align:center">Физика</h2></div>
-                                    </a>
-                                    <!--<p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>-->
-                                </div>
-                                <div id="chemDiv" class="col-lg-4 col-md-4">
-                                    <a>
-                                        <span class="post centred-image"><img width="70%" src="img/bacteria.svg"></span>
-                                        <div id="chem" class="post"><h2 style="text-align:center">Химия-Биология</h2></div>
-                                    </a>
-                                    <!--<p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>-->
-                                </div>
-                            </div> 
-                        </div>  
-                        <div id="mathHidedDiv" class="row">
-                            <p><span class="post">Ученики этого профиля изучают математику и информатику по углубленной программе, а также осваивают знания физики на повышенном уровне. Эти дисциплины идут бок о бок, ведь математика и логика – база, необходимая для успешного изучения информатики.</span></p>
-                        </div>
-                        <div id="physHidedDiv" class="row">
-                            <p><span class="post">Физическое направление в Ришельевском лицее создано специально для тех, кого принято называть «почемучками». Почему небо голубое? Зачем скрипач натирает смычок канифолью? Почему двухколесный велосипед сохраняет устойчивость, даже если ехать, не держась за руль? Как рождаются цвета радуги?</span></p>
-                        </div>
-                        <div id="chemHidedDiv" class="row">
-                            <p><span class="post">Учиться на химико-биологическом отделении в Ришельевском лицее не только интересно, но и весело. Творческий подход преподавателей к своему предмету воспитывает в детях смелость и инициативность. Уровень преподавания химии и биологии в лицее очень и очень высок. Об этом свидетельствуют достижения наших учеников.</span></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+									<div class="col-lg-3 col-md-3">
+										<a data-toggle="modal" data-target="#EERL">
+											<span class="post centred-image"><img width="80%"  src="img/summer/river.svg"></span>
+											<div class="post"><h2 style="text-align:center">ЭЭРЛ</h2></div>
+										</a>
+										<p>
+											<span class="post">Экологическая Экспелиция Ришельевского Лицея <br><br>...Экспедиция – это борьба со своей злостью. Ведь вокруг тебя твои одноклассники, люди, живущие с тобой в одной палатке, с которыми ты сидишь у одного костра, ешь из одного котелка. <br><br>Экспедиция – это борьба со своей ленью.
+											</span>
+										</p>
+									</div>
 
-            <div class="row">
-                <div id="g-row-3">
-                    <div class="post">
-                        <span class="post"><h1>Лицей летом</h1></span>
-                        <p></p>
-                    </div>
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div style="margin-top:5%">
-                                <div class="col-lg-3 col-md-3">
-                                    <a data-toggle="modal" data-target="#SNMS">
-                                        <span class="post centred-image"><img width="80%" src="img/summer/home.svg"></span>
-                                        <div class="post"><h2 style="text-align:center">ЛЕМШ</h2></div>
-                                    </a>
-                                    <p><span class="post">Летняя Естественно-Математическая Школа <br><br>Если даже летом вы не можете жить без физики, математики, информатики, любите решать олимпиадные задачи и участвовать в физических турнирах, и при этом хотите загореть, вволю накупаться в море, укрепить свое здоровье, тогда летняя физико-математическая школа – именно то, что вам нужно!</span></p>
-                                </div>
-                                <div id="SNMS" class="modal fade">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content" style="color: black;">
-                                            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
-                                                <h4 class="modal-title">Летние школы</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <a>1998. Каролино-Бугаз</a><br>
-                                                <a>1999. Каролино-Бугаз</a><br>
-                                                <a>2000. Южный</a><br>
-                                                <a>2001. Южный</a><br>
-                                                <a>2002. Сергеевка</a><br>
-                                                <a>2003. Чабанка</a><br>
-                                                <a>2004. Южный</a><br>
-                                                <a>2014. Совиньон</a><br>
-                                                <a>2015. Совиньон</a><br>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+									<div id="EERL" class="modal fade">
+										<div class="modal-dialog">
+											<div class="modal-content" style="color: black;">
+												<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+													<h4 class="modal-title">Экспедиции</h4>
+												</div>
+												<div class="modal-body">
+													<a>ЭЭРЛ-2004. Долина Южного Буга.</a><br> 
+													<a>ЭЭРЛ-2005. Кинбурнская коса.</a><br>
+													<a>ЭЭРЛ-2006. Карпаты. Долина реки Стрый.</a><br> 
+													<a>ЭЭРЛ-2007. Волынь. Шацкие озера.</a><br>
+													<a>ЭЭРЛ-2008. Южный Буг.</a><br>
+													<a>ЭЭРЛ-2009. Карпаты. Междуречье Мизунки и Свичи.</a><br>
+													<a>ЭЭРЛ-2010. Толтры. Долины Смотрича и Мукши.</a><br>
+													<a>ЭЭРЛ-2011. Долина реки Сейм.</a><br>
+													<a>ЭЭРЛ-2012. Юниорская. Долина реки Случь.</a><br>
+													<a>ЭЭРЛ-2013. Юниорская. Долина реки Серет.</a><br>
+													<a>ЭЭРЛ-2014. Юниорская. Снова Южный Буг.</a><br>
+													<a>ЭЭРЛ-2015. Юниорская. Долина рек Стырь и Горынь.</a><br>
+													<hr>
+													<a href="http://rl.odessa.ua/index.php/ru/podgotovka-eerl-2016">Будущая экспедиция</a>
+												</div>
+											</div>
+										</div>
+									</div>
 
-                                <div class="col-lg-3 col-md-3">
-                                    <a data-toggle="modal" data-target="#EERL">
-                                        <span class="post centred-image"><img width="80%"  src="img/summer/river.svg"></span>
-                                        <div class="post"><h2 style="text-align:center">ЭЭРЛ</h2></div>
-                                    </a>
-                                    <p><span class="post">Экологическая Экспелиция Ришельевского Лицея <br><br>...Экспедиция – это борьба со своей злостью. Ведь вокруг тебя твои одноклассники, люди, живущие с тобой в одной палатке, с которыми ты сидишь у одного костра, ешь из одного котелка. <br><br>Экспедиция – это борьба со своей ленью.</span></p>
-                                </div>
+									<div class="col-lg-3 col-md-3">
+										<a href="http://lbprl.od.ua">
+											<span class="post centred-image"><img width="80%"  src="img/summer/mountains.svg"></span>
+											<div class="post"><h2 style="text-align:center">ЛБПРЛ</h2></div>
+										</a>
+										<p>
+											<span class="post">Летняя Биологическая Практика Ришельевского Лицея <br><br>Что такое "ЛБПРЛ"?<br>
+											Раз в год, в середине июля, ученики Ришельеского лицея участвуют в двухнедельном походе к далёким от цивилизации местам нашей Украины. Жизнь в палатках, изучение местных обитателей, еда с костра, увлекательные игры и мероприятия – всё это называется ЛБПРЛ.
+											</span>
+										</p>
+									</div>
 
-                                <div id="EERL" class="modal fade">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content" style="color: black;">
-                                            <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
-                                                <h4 class="modal-title">Экспедиции</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <a>ЭЭРЛ-2004. Долина Южного Буга.</a><br> 
-                                                <a>ЭЭРЛ-2005. Кинбурнская коса.</a><br>
-                                                <a>ЭЭРЛ-2006. Карпаты. Долина реки Стрый.</a><br> 
-                                                <a>ЭЭРЛ-2007. Волынь. Шацкие озера.</a><br>
-                                                <a>ЭЭРЛ-2008. Южный Буг.</a><br>
-                                                <a>ЭЭРЛ-2009. Карпаты. Междуречье Мизунки и Свичи.</a><br>
-                                                <a>ЭЭРЛ-2010. Толтры. Долины Смотрича и Мукши.</a><br>
-                                                <a>ЭЭРЛ-2011. Долина реки Сейм.</a><br>
-                                                <a>ЭЭРЛ-2012. Юниорская. Долина реки Случь.</a><br>
-                                                <a>ЭЭРЛ-2013. Юниорская. Долина реки Серет.</a><br>
-                                                <a>ЭЭРЛ-2014. Юниорская. Снова Южный Буг.</a><br>
-                                                <a>ЭЭРЛ-2015. Юниорская. Долина рек Стырь и Горынь.</a><br>
-                                                <hr>
-                                                <a href="http://rl.odessa.ua/index.php/ru/podgotovka-eerl-2016">Будущая экспедиция</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+									<div class="col-lg-3 col-md-3">
+										<a data-toggle="modal" data-target="#VERL">
+												<span class="post centred-image"><img width="80%"  src="img/summer/desert.svg"></span>
+												<div class="post"><h2 style="text-align:center">ВЭРЛ</h2></div>
+										</a>
+										<p>
+											<span class="post">Вело-Экспедиция Ришельевского Лицея<br><br>
+											Если вы любите кататься на велосипеде, но вы устали от городских улиц, вы можете отправится на встречу природе со своим двухколесным другом. Что, несомненно, будет одним из тяжелейших испытаний...
+											</span>
+										</p>
+									</div>
 
-                                <div class="col-lg-3 col-md-3">
-                                    <a href="http://lbprl.od.ua">
-                                        <span class="post centred-image"><img width="80%"  src="img/summer/mountains.svg"></span>
-                                        <div class="post"><h2 style="text-align:center">ЛБПРЛ</h2></div>
-                                    </a>
-                                    <p><span class="post">Летняя Биологическая Практика Ришельевского Лицея <br><br>Что такое "ЛБПРЛ"?<br>
-                                        Раз в год, в середине июля, ученики Ришельеского лицея участвуют в двухнедельном походе к далёким от цивилизации местам нашей Украины. Жизнь в палатках, изучение местных обитателей, еда с костра, увлекательные игры и мероприятия – всё это называется ЛБПРЛ.</span></p>
-                                    </div>
+									<div id="VERL" class="modal fade">
+										<div class="modal-dialog">
+											<div class="modal-content" style="color: black;">
+												<div class="modal-header">
+													<button class="close" type="button" data-dismiss="modal">×</button>
+													<h4 class="modal-title">Экспедиции</h4>
+												</div>
+												<div class="modal-body">
+													<a>ВЭРЛ-2012. Велоэкспедиция по Кировоградской обл.</a><br>
+													<a>ВЭРЛ-2013. Велоэкспедиция вдоль Ю.Буга.</a><br>
+													<a>ВЭРЛ-2014. Велоэкспедиция вдоль Днестра и Мурафы.</a><br>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                                    <div class="col-lg-3 col-md-3">
-                                        <a data-toggle="modal" data-target="#VERL">
-                                            <span class="post centred-image"><img width="80%"  src="img/summer/desert.svg"></span>
-                                            <div class="post"><h2 style="text-align:center">ВЭРЛ</h2></div>
-                                        </a>
-                                        <p><span class="post">Вело-Экспедиция Ришельевского Лицея<br><br>
-                                            Если вы любите кататься на велосипеде, но вы устали от городских улиц, вы можете отправится на встречу природе со своим двухколесным другом. Что, несомненно, будет одним из тяжелейших испытаний...</span></p>
-                                        </div>
-                                        <div id="VERL" class="modal fade">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content" style="color: black;">
-                                                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
-                                                        <h4 class="modal-title">Экспедиции</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <a>ВЭРЛ-2012. Велоэкспедиция по Кировоградской обл.</a><br>
-                                                        <a>ВЭРЛ-2013. Велоэкспедиция вдоль Ю.Буга.</a><br>
-                                                        <a>ВЭРЛ-2014. Велоэкспедиция вдоль Днестра и Мурафы.</a><br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="row">
+					<div id="g-row-4">
+						<div class="post">
+							<span class="post"><h1>После уроков</h1></span>
+							<div class="post"><p>Если вы думаете, что после звонка с последнего урока лицей пустеет, то вы глубоко заблуждаетесь. Каждый лицеист может найти себе занятие по душе, будь то кружок по интересующему предмету, подготовка к турниру, репетиция спектакля или, например, «Что? Где? Когда?».</p></div>
+						</div>
+						<div class="container-fluid">
+							<div class="row">
+								<div style="margin-top:5%">
+									<div class="col-lg-4 col-md-4">
+										<a data-toggle="modal" data-target="#sport">
+											<span class="post centred-image"><img width="70%" src="img/activities/horse.svg"></span>
+											<div class="post"><h2 style="text-align:center">Спорт</h2></div>
+										</a>
+										<p><span class="post">Лицей, помимо научных достижений, проявляет себя и в спорте. Учащиеся показывают отличные результаты в волейболе, баскетболе, бадминтоне, настольном теннисе, легкой атлетике, шахматах, шашках и других видах спорта. Предлагаем Вам узнать об этом подробнее.</p>
+									</div>
+									<div id="sport" class="modal fade">
+										<div class="modal-dialog">
+											<div class="modal-content" style="color: black;">
+												<div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
+													<h4 class="modal-title">Направления</h4>
+												</div>
+												<div class="modal-body">
+													<a href="html/activities/sport/badminton.html">Бадминтон</a><br>
+													<a href="html/activities/sport/basketball.html">Баскетбол</a><br>
+													<a href="html/activities/sport/volleyball.html">Волейбол</a><br>
+													<a href="html/activities/sport/athletics.html">Лёгкая атлетика</a><br>
+													<a href="html/activities/sport/table_tennis.html">Настольный теннис</a><br>
+													<a href="html/activities/sport/chess.html">Шахматы</a><br>
+													<a href="html/activities/sport/checkers.html">Шашки</a><br>
+												</div>
+											</div>
+										</div>
+									</div>
 
-                    <div class="row">
-                        <div id="g-row-4">
-                            <div class="post">
-                                <span class="post"><h1>После уроков</h1></span>
-                                <div class="post"><p>Если вы думаете, что после звонка с последнего урока лицей пустеет, то вы глубоко заблуждаетесь. Каждый лицеист может найти себе занятие по душе, будь то кружок по интересующему предмету, подготовка к турниру, репетиция спектакля или, например, «Что? Где? Когда?».</p></div>
-                            </div>
-                            <div class="container-fluid">
-                                <div class="row">
-                                    <div style="margin-top:5%">
-                                        <div class="col-lg-4 col-md-4">
-                                            <a data-toggle="modal" data-target="#sport">
-                                                <span class="post centred-image"><img width="70%" src="img/activities/horse.svg"></span>
-                                                <div class="post"><h2 style="text-align:center">Спорт</h2></div>
-                                            </a>
-                                            <p><span class="post">Лицей, помимо научных достижений, проявляет себя и в спорте. Учащиеся показывают отличные результаты в волейболе, баскетболе, бадминтоне, настольном теннисе, легкой атлетике, шахматах, шашках и других видах спорта. Предлагаем Вам узнать об этом подробнее.</p>
-                                        </div>
-                                        <div id="sport" class="modal fade">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content" style="color: black;">
-                                                    <div class="modal-header"><button class="close" type="button" data-dismiss="modal">×</button>
-                                                        <h4 class="modal-title">Направления</h4>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <a href="html/activities/sport/badminton.html">Бадминтон</a><br>
-                                                        <a href="html/activities/sport/basketball.html">Баскетбол</a><br>
-                                                        <a href="html/activities/sport/volleyball.html">Волейбол</a><br>
-                                                        <a href="html/activities/sport/athletics.html">Лёгкая атлетика</a><br>
-                                                        <a href="html/activities/sport/table_tennis.html">Настольный теннис</a><br>
-                                                        <a href="html/activities/sport/chess.html">Шахматы</a><br>
-                                                        <a href="html/activities/sport/checkers.html">Шашки</a><br>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+									<div class="col-lg-4 col-md-4">
+										<a href="#">
+											<span class="post centred-image"><img width="80%"  src="img/activities/owl.svg"></span>
+											<div class="post"><h2 style="text-align:center">ЧГК</h2></div>
+										</a>
+										<p><span class="post">УХ!!!</span></p>
+									</div>
+									<div class="col-lg-4 col-md-4">
+										<a href="#">
+											<span class="post centred-image"><img width="80%"  src="img/activities/theatre.svg"></span>
+											<div class="post"><h2 style="text-align:center">Театр</h2></div>
+										</a>
+										<p><span class="post">ОХХХ!!!</span></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-                                        <div class="col-lg-4 col-md-4">
-                                            <a href="#">
-                                                <span class="post centred-image"><img width="80%"  src="img/activities/owl.svg"></span>
-                                                <div class="post"><h2 style="text-align:center">ЧГК</h2></div>
-                                            </a>
-                                            <p><span class="post">УХ!!!</span></p>
-                                        </div>
-                                        <div class="col-lg-4 col-md-4">
-                                            <a href="#">
-                                                <span class="post centred-image"><img width="80%"  src="img/activities/theatre.svg"></span>
-                                                <div class="post"><h2 style="text-align:center">Театр</h2></div>
-                                            </a>
-                                            <p><span class="post">ОХХХ!!!</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+				<div class="row">
+					<div id="g-row-5">
+					</div>
+				</div>
+			</div>
 
-                    <div class="row">
-                        <div id="g-row-5">
-                        </div>
-                    </div>
-                </div>
-
-                <script type="text/javascript">
-                   function setHeiHeight() {
-                      $('#hei').css({
-                         minHeight: $(window).height() + 'px'
-                     });
-                      $('#hei-inner').css({
-                        padding: $(window).height()/2.6 + 'px 15px 100px'
-                    });
-                  }
-                  setHeiHeight(); 
-                  $('#downButton').click(function(){
-                    $('body').animate({"scrollTop": $('#hei1').offset().top}, "slow");
-                });
-            </script>
-            <script>
-                $( document ).ready(function() {
-                    $('#spheres').click(function()
-                    {
-                        $('body').animate({"scrollTop": $('#hei1').offset().top}, "slow");
-                    });
-                    $('#summer').click(function()
-                    {
-                        $('body').animate({"scrollTop": $('#g-row-3').offset().top}, "slow");
-                    });
-                    $('#evening').click(function()
-                    {
-                        $('body').animate({"scrollTop": $('#g-row-4').offset().top}, "slow");
-                    });
-                    $('#logo').click(function()
-                    {
-                        $('body').animate({"scrollTop": 0}, "slow");
-                    });
-                    $('#main-logo').click(function()
-                    {
-                        $('body').animate({"scrollTop": 0}, "slow");
-                    });
-                });
-            </script>
-        </body>
-        </html>
+			<script src="js/main.js"></script>
+			<script type="text/javascript">
+				function setHeiHeight() {
+					$('#hei').css({
+						minHeight: $(window).height() + 'px'
+					});
+					$('#hei-inner').css({
+						padding: $(window).height()/2.6 + 'px 15px 100px'
+					});
+				}
+				setHeiHeight(); 
+				$('#downButton').click(function(){
+					$('body').animate({"scrollTop": $('#hei1').offset().top - 50}, "slow");
+				});
+			</script>
+			<script>
+				$( document ).ready(function() {
+					$('#spheres').click(function()
+					{
+						$('body').animate({"scrollTop": $('#hei1').offset().top}, "slow");
+					});
+					$('#summer').click(function()
+					{
+						$('body').animate({"scrollTop": $('#g-row-3').offset().top}, "slow");
+					});
+					$('#evening').click(function()
+					{
+						$('body').animate({"scrollTop": $('#g-row-4').offset().top}, "slow");
+					});
+					$('#logo').click(function()
+					{
+						$('body').animate({"scrollTop": 0}, "slow");
+					});
+					$('#main-logo').click(function()
+					{
+						$('body').animate({"scrollTop": 0}, "slow");
+					});
+				});
+			</script>
+	</body>
+</html>
