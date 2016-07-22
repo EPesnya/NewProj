@@ -13,7 +13,8 @@ $( document ).ready(function() {
         if((scrolled > postsOffsets[i].top - $(window).height()) && !isPlayed[i])
         {
             posts[i].css("top", "2em");
-            posts[i].animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
+            posts[i].css("left", "-2em");
+            posts[i].animate({ "opacity": "+=1", "left": "+=2em" , "top": "-=2em"}, "slow" );
             isPlayed[i] = true;
         }
     }
@@ -22,8 +23,31 @@ $( document ).ready(function() {
         for (var i = posts.length - 1; i >= 0; i--) {
             if((scrolled > postsOffsets[i].top - $(window).height()) && !isPlayed[i])
             {
-                posts[i].css("top", "2em");
-                posts[i].animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
+                if(i % 4 == 0)
+                {
+                    posts[i].css("top", "2em");
+                    posts[i].css("left", "-2em");
+                    posts[i].animate({ "opacity": "+=1", "left": "+=2em" , "top": "-=2em"}, "slow" );
+                }
+                else if(i % 4 == 1)
+                {
+                    posts[i].css("top", "2em");
+                    posts[i].css("left", "2em");
+                    posts[i].animate({ "opacity": "+=1", "left": "-=2em" , "top": "-=2em"}, "slow" );                    
+                }
+                else if(i % 4 == 2)
+                {
+                    posts[i].css("top", "1em");
+                    posts[i].css("left", "5em");
+                    posts[i].animate({ "opacity": "+=1", "left": "-=5em" , "top": "-=1em"}, "slow" );                    
+                }
+                else if(i % 4 == 3)
+                {
+                    posts[i].css("top", "1em");
+                    posts[i].css("left", "-3em");
+                    posts[i].animate({ "opacity": "+=1", "left": "+=3em" , "top": "-=1em"}, "slow" );                    
+                }
+                //posts[i].animate({ "opacity": "+=1" , "top": "-=2em"}, "slow" );
                 isPlayed[i] = true;
             }
         }
